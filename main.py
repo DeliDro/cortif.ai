@@ -39,3 +39,7 @@ async def predict(
 @app.get("/")
 async def root():
     return {"message": "This is a test API"}
+
+@app.get("/health-check")
+async def health_check():
+    return {"message": "This is a health check endpoint"}
